@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+    <title>Sobre você</title>
+</head>
+
+<body>
+    <div>
+        <h1 id="titulo">Um pouco mais sobre você</h1>
+        <p id="subtitulo">Complete com suas informações</p>
+        <br>
+    </div>
+
+    <form>
+
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Name</strong><label>
+                        <input type="text" nome="nome" id="nome" required>
+            </div>
+
+
+            <div class="campo">
+                <label for="cidade"><strong>City</strong><label>
+                        <input type="text" name="cidade" id="cidade" required>
+            </div>
+
+
+            <div class="campo">
+                <label for="pokemon"><strong>Fav Pokemon?</strong><label>
+                        <input type="text" name="pokemon" id="pokemon" required>
+            </div>
+
+
+        </fieldset>
+
+
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong><label>
+                    <input type="email" name="email" id="email">
+        </div>
+
+        <div class="campo">
+            <label><strong>Você prefere dia ou noite?</strong><label>
+                    <label>
+                        <input type="radio" name="prefere" value="noite">Dia
+                    </label>
+                    <label>
+                        <input type="radio" name="prefere" value="noite">Noite
+                    </label>
+                    <lavel>
+                        <input type="radio" name="prefere" value="Os dois">Os dois
+                    </lavel>
+        </div>
+
+        <div class="campo">
+            <label for="melhor"><strong>Noite é bem melhor</strong><label>
+                    <select id="melhor">
+                        <option selected disabled value="">Selecione</option>
+                        <option>Concordo</option>
+                        <option>Não concordo</option>
+                    </select>
+        </div>
+
+        <fieldset class="grupo">
+            <label><strong>Tecnologias você usa</strong><label><br><br>
+                    <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                    <label for="tecnlogia1">HTML</label>
+                    <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                    <label for="tecnlogia2">CSS</label>
+                    <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Javascript">
+                    <label for="tecnlogia3">Javascript</label>
+                    <input type="checkbox" id="tecnologia4" name="tecnologia4" value="Python">
+                    <label for="tecnlogia4">Python</label>
+                    </div>
+        </fieldset>
+
+        <div>
+            <br>
+            <label>Conte alguma curiosidade sobre você</strong><label>
+                    <textarea rot="6" style="width: 26m" id="curiosidade" name-="curiosidade"></textarea>
+        </div>
+
+        <button class="botao" type="submit">Concluido</button>
+    </form>
+
+</body>
+
+</html>
